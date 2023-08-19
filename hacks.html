@@ -1,0 +1,33 @@
+<script>
+</script>
+<p>Note: Don't Use These hacks on our Site</p>
+<div>
+<h1>Bookmarks</h1>
+<p>Note: Drag Buttons To The Bookmark Bar to Add Them as Bookmarks</p>
+<button><a href="javascript: alert(location.href + ' Cookies= ' + document.cookie)">Grab Cookies</a></button>
+<button><a href="javascript: var CookieFound = false; let name = prompt('Enter Cookie Name') + '='; let ca = document.cookie.split(';'); for(let i = 0; i < ca.length; i++) { let c = ca[i]; while (c.charAt(0) == ' ') { c = c.substring(1);} if (c.indexOf(name) == 0) { alert(c.substring(name.length, c.length)); CookieFound = true; } } if(CookieFound == false) { alert('ERROR: Failed To Find Cookie');} ">Get Cookie</a></button>
+<button><a href="javascript: alert('geoLocation= ' + navigator.geoLocation)">Grab geoLocation</a></button>
+<button><a href="javascript: alert('AppVersion= ' + navigator.appVersion)">Grab AppVersion</a></button>
+<button><a href="javascript: alert(location.href + ' CookieEnabled= ' + navigator.cookieEnabled)">CookieEnabled</a></button>
+<button><a href="javascript: alert('AppName= ' + navigator.appName)">Grab AppName</a></button>
+<button><a href="javascript: alert('AppCodeName= ' + navigator.appCodeName)">Grab AppCodeName</a></button>
+<button><a href="javascript: alert('navigator.product= ' + navigator.product)">Grab navigator.product</a></button>
+<button><a href="javascript: alert('UserAgent= ' + navigator.userAgent)">Grab UserAgent</a></button>
+<button><a href="javascript: alert('OS/Platform= ' + navigator.platform)">Grab OS/Platform</a></button>
+<button><a href="javascript: alert('Language= ' + navigator.language)">Grab Language</a></button>
+<button><a href="javascript: alert(location.href + ' JavaEnabled= ' + navigator.javaEnabled)">JavaEnabled</a></button>
+<button><a href="javascript: alert(location.href + ' localStorage= ' + localStorage.getItem(prompt('Enter Item Name')))">Grab localStorage</a></button>
+<button><a href="javascript: localStorage.setItem(prompt('Enter Item Name'),prompt('Enter Value'));alert('Sucess')">Set localStorage</a></button>
+<button><a href="javascript: localStorage.removeItem(prompt('Enter Item Name'));alert('Sucess')">Remove localStorage</a></button>
+<button><a href="javascript: alert(eval(prompt('Enter Function')))">Run Function</a></button>
+<button><a href="javascript: var inputs = document.getElementsByTagName('input');for (var i=0; i<inputs.length; i++) { if (inputs[i].type.toLowerCase() === 'password') { alert(inputs[i].value); } }">Show Password</a></button>
+<button><a href="javascript: open('mailto:' + prompt('Enter Email')); alert('Sucess')">Mail</a></button>
+<button><a href="javascript: eval('document.body.style.' + prompt('Enter CSS Type') + ' = ' + prompt('Enter Value')); alert('Sucess')">Change Body Style</a></button>
+<button><a href="javascript: var gravitySnippet = document.createElement('script'); gravitySnippet.src = 'http://thediamondclan.atwebpages.com/gravity.packed.js'; document.body.appendChild(gravitySnippet); var Box2dWeb21a3minSnippet = document.createElement('script'); Box2dWeb21a3minSnippet.src = 'http://thediamondclan.atwebpages.com/Box2dWeb-2.1.a.3.min.js'; document.body.appendChild(Box2dWeb21a3minSnippet); var gr = new gravity({boundaries: 'document',debugDraw: false}); gr.add(document.body, {fixed: false,restitution: 1,friction: 0.1,density: 1,includeChild: true}); alert('Sucess')">Enable Gravity</a></button>
+<div>
+ <h2><b>Vedit</b></h2>
+ <button><a href="javascript: var VeditSnippet = document.createElement('script');VeditSnippet.src = 'http://thediamondclan.atwebpages.com/vedit.js';document.body.appendChild(VeditSnippet);var v = new vedit();alert('Sucessfully Added Vedit To This Page')">Setup Vedit</a></button>
+ <button><a href="javascript: v.editOn();alert('Sucessfully Enabled Vedit Editor')">Enable Vedit</a></button>
+ <button><a href="javascript: v.editOff();alert('Sucessfully Disabled Vedit Editor')">Disable Vedit</a></button>
+</div>
+</div>
