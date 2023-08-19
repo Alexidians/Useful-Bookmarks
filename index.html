@@ -2,29 +2,50 @@
 <h1>Bookmarks</h1>
 <p>Note: Drag Buttons To The Bookmark Bar to Add Them as Bookmarks</p>
 <button><a href="javascript: alert(location.href + ' Cookies= ' + document.cookie)">Grab Cookies</a></button>
+<p>Alerts all Cookies in document.cookie</p>
 <button><a href="javascript: var CookieFound = false; let name = prompt('Enter Cookie Name') + '='; let ca = document.cookie.split(';'); for(let i = 0; i < ca.length; i++) { let c = ca[i]; while (c.charAt(0) == ' ') { c = c.substring(1);} if (c.indexOf(name) == 0) { alert(c.substring(name.length, c.length)); CookieFound = true; } } if(CookieFound == false) { alert('ERROR: Failed To Find Cookie');} ">Get Cookie</a></button>
+<p>Alerts a Cookie by the name you entered from document.cookie</p>
 <button><a href="javascript: alert('geoLocation= ' + navigator.geoLocation)">Grab geoLocation</a></button>
+<p>Gets The navigator.geoLocation GeoLocation Variable (might not work while on http websites)</p>
 <button><a href="javascript: alert('AppVersion= ' + navigator.appVersion)">Grab AppVersion</a></button>
+<p>Gets The Version of your Browser</p>
 <button><a href="javascript: alert(location.href + ' CookieEnabled= ' + navigator.cookieEnabled)">CookieEnabled</a></button>
+<p>Returns If Cookies are Enabled</p>
 <button><a href="javascript: alert('AppName= ' + navigator.appName)">Grab AppName</a></button>
+<p>Returns The Browser App Name</p>
 <button><a href="javascript: alert('AppCodeName= ' + navigator.appCodeName)">Grab AppCodeName</a></button>
+<p>Returns The Browser App Code Name</p>
 <button><a href="javascript: alert('navigator.product= ' + navigator.product)">Grab navigator.product</a></button>
+<p>Grabs The Browser Product with navigator.product</p>
 <button><a href="javascript: alert('UserAgent= ' + navigator.userAgent)">Grab UserAgent</a></button>
+<p>Grabs Your UserAgent</p>
 <button><a href="javascript: alert('OS/Platform= ' + navigator.platform)">Grab OS/Platform</a></button>
+<p>Gets The Browser Platform/Operating System</p>
 <button><a href="javascript: alert('Language= ' + navigator.language)">Grab Language</a></button>
+<p>Returns The Browser Language</p>
 <button><a href="javascript: alert(location.href + ' JavaEnabled= ' + navigator.javaEnabled)">JavaEnabled</a></button>
+<p>Returns If Java Is Enabled</p>
 <button><a href="javascript: alert(location.href + ' localStorage= ' + localStorage.getItem(prompt('Enter Item Name')))">Grab localStorage</a></button>
+<p>Gets a LocalStorage item by The Name you Enter</p>
 <button><a href="javascript: localStorage.setItem(prompt('Enter Item Name'),prompt('Enter Value'));alert('Sucess')">Set localStorage</a></button>
+<p>Sets a LocalStorage item by The Item Name you enter and The Value You Enter</p>
 <button><a href="javascript: localStorage.removeItem(prompt('Enter Item Name'));alert('Sucess')">Remove localStorage</a></button>
+<p>Removes a LocalStorage item by The Item Name You Enter</p>
 <button><a href="javascript: alert(eval(prompt('Enter Function')))">Run Function</a></button>
+<p>Runs The Function You Enter</p>
 <button><a href="javascript: var inputs = document.getElementsByTagName('input');for (var i=0; i<inputs.length; i++) { if (inputs[i].type.toLowerCase() === 'password') { alert(inputs[i].value); } }">Show Password</a></button>
+<p>Alerts The Entered Password when you are on a login Page</p>
 <button><a href="javascript: open('mailto:' + prompt('Enter Email')); alert('Sucess')">Mail</a></button>
+<p>Mail Somebody By The Email you enter</p>
 <button><a href="javascript: eval('document.body.style.' + prompt('Enter CSS Type') + ' = ' + prompt('Enter Value')); alert('Sucess')">Change Body Style</a></button>
-<button><a href="javascript: var gravitySnippet = document.createElement('script'); gravitySnippet.src = 'http://thediamondclan.atwebpages.com/gravity.packed.js'; document.body.appendChild(gravitySnippet); var Box2dWeb21a3minSnippet = document.createElement('script'); Box2dWeb21a3minSnippet.src = 'http://thediamondclan.atwebpages.com/Box2dWeb-2.1.a.3.min.js'; document.body.appendChild(Box2dWeb21a3minSnippet); var gr = new gravity({boundaries: 'document',debugDraw: false}); gr.add(document.body, {fixed: false,restitution: 1,friction: 0.1,density: 1,includeChild: true}); alert('Sucess')">Enable Gravity</a></button>
+<p>Edit The Body CSS</p>
 <div>
  <h2><b>Vedit</b></h2>
- <button><a href="javascript: var VeditSnippet = document.createElement('script');VeditSnippet.src = 'http://thediamondclan.atwebpages.com/vedit.js';document.body.appendChild(VeditSnippet);var v = new vedit();alert('Sucessfully Added Vedit To This Page')">Setup Vedit</a></button>
+ <button><a href="javascript: var VeditSnippet = document.createElement('script');VeditSnippet.src = 'https://alexidians.github.io/Useful-Bookmarks/vedit.js';document.body.appendChild(VeditSnippet);var v = new vedit();alert('Sucessfully Added Vedit To This Page')">Setup Vedit</a></button>
+ <p>Setup Vedit and then you can Enable The Vedit Editor</p>
  <button><a href="javascript: v.editOn();alert('Sucessfully Enabled Vedit Editor')">Enable Vedit</a></button>
+ <p>Enable Vedit Editor if you have setuped Vedit</p>
  <button><a href="javascript: v.editOff();alert('Sucessfully Disabled Vedit Editor')">Disable Vedit</a></button>
+ <p>Disable The Vedit Editor if you have The Vedit Editor Enabled</p>
 </div>
 </div>
